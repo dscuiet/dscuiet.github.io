@@ -1,0 +1,27 @@
+@import './vendor/bootstrap.min.css';
+@import '../fonts/GoogleSans.css';
+
+a,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+body {
+    font-family: 'Google Sans';
+    font-size: 16px;
+    background-color: #e9ecef;
+}
+
+.brand-image {
+    height: auto;
+    width: auto;
+}
+
+.navbar-brand {
+    color: #121212;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
