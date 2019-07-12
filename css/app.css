@@ -1,5 +1,6 @@
 @import url(./vendor/bootstrap.min.css);
 @import url(../fonts/GoogleSans.css);
+@import url("https://fonts.googleapis.com/css?family=Lato|Literata|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800|Roboto|Roboto+Condensed&display=swap");
 a,
 a:hover,
 a:active {
@@ -19,5 +20,29 @@ body {
 
 .navbar {
   background-color: #ffffff; }
+
+.jumbotron {
+  margin-top: 70px; }
+
+.preloader {
+  z-index: 9999999;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  margin-top: -70px;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .preloader .preloader-image {
+    height: 120px;
+    width: auto; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
 
 /*# sourceMappingURL=app.css.map */
