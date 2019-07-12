@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <meta name="description" content="Developers Student Club - UIET">
     <meta name="author" content="Shubhkirti Sharma">
-    <title>DSCUIET &mdash; Developers Student Club - University Institute of Engineering and Technology</title>
 
-    <link href="./css/app.css" rel="stylesheet" media="all">
+    <title>DSCUIET &mdash; Developers Student Club - University Institute of Engineering and Technology</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
@@ -24,33 +22,83 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
 
-
-    <link href="https://fonts.googleapis.com/css?family=Lato|Literata|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
-
-
-
+    <link href="./compiled/styles.css" rel="stylesheet" media="all">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./js/vendor/bootstrap.min.js"></script>
-    <script src="./js/app.js"></script>
+    <!--Fallback for IE-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-sticky-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            <img alt="Brand" src="./images/dsc.min.png" class="brand-image">
-            DSCUIET
-          </a>
+    <div class="wrapper">
+      <div class="title-container">
+        <img src="./images/dsc.min.png">
+        <span class="title">&nbsp;DSCUIET</span>
+      </div>
+      <div class="container main">
+        <div class="intro-container">
+          <div class="cover--1"></div>
+          <div class="cover--2"></div>
+          <div class="intro">
+            <h1>
+              <span class="bg-black"><span class="c-blue">D</span><span class="c-yellow">e</span><span class="c-green">v</span><span class="c-red">e</span><span class="c-yellow">l</span><span class="c-green">o</span><span class="c-red">p</span><span class="c-blue">e</span><span class="c-yellow">r</span></span> Student Club</h1> 
+            <h4>University Institute of Engineering and Technology</h4>
+          </div>
+          <!-- <a href="javascript:void(0)" class="link">
+            <div class="btn btn-work">
+              See Products
+            </div>
+          </a> -->
+          </div>
+        </div>
+        <div class="container about">
+          <div class="about-wall">
+            <div class="about-title">About Us</div>
+          </div>
+        </div>
+        <div class="container introduction">
+          <div class="card-container">
+            <div class="card card-light">
+              <div class="card-heading">
+                Light card Heading
+              </div>
+              <div class="card-description">
+                Light card Content
+              </div>
+            </div>
+            <div class="card card-dark card-inverted">
+              <div class="card-heading">
+                Dark card Heading
+              </div>
+              <div class="card-description">
+                Dark card Content
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container masthead">
+          <div class="masthead__date">24<sup>th</sup>-25<sup>th</sup>&nbsp;March'18</div>
+        </div> -->
+
+        <div class="nav nav-container" id="nav">
+          <div class="uietmun--logo"></div>
+          <div class="navigation">
+            <div class="nav-item"><a href="/index.html">Home</a></div>
+            <div class="nav-item"><a href="#">Executive Board</a></div>
+            <div class="nav-item"><a href="#">Registrations</a></div>
+            <div class="nav-item"><a href="#">Contact</a></div>
+          </div>
+        </div>     
+      </div>
+      <div class="nav-toggle-container">
+        <div class="toggle" id="toggle">
+          <span></span>
         </div>
       </div>
-    </nav>
-    <div class="jumbotron text-center">
-      <h1>Developers Student Club &mdash; University Institute of Engineering and Technology</h1>
-      <p>
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-    </div>
+    <script src="compiled/script.js"></script>
   </body>
 </html>
