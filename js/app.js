@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).ready(function() {
     $('.preloader').addClass('show');
 });
 $(window).load(function() {
