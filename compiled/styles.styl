@@ -3,7 +3,7 @@
 @import 'fonts.css'
 
 GOOGLESANS = 'Google Sans'
-INTER = 'Inter UI'
+INTER = 'Inter'
 
 *
   padding: 0
@@ -22,7 +22,7 @@ html
 body 
   width: 100%
   height: 100%
-  font: normal 14px/24px GOOGLESANS,'Helvetica','Helvetica Neue','Arial', sans-serif 
+  font: normal 300 14px/24px INTER,'Helvetica','Helvetica Neue','Arial', sans-serif 
   overflow-x: hidden
   overflow-y scroll
   
@@ -168,7 +168,7 @@ body
 
 .nav-container 
   height: 100%
-  background primary-black
+  background-image url('../images/nav-back.svg')
 
 .nav 
   position fixed
@@ -315,11 +315,11 @@ body
 .section-title
   center-flex(column)
   .section-title--text
-    padding 100px 0
+    padding 200px 0 100px 0
     font-size 4.4em
     @media (max-width 768px)
       font-size 2em
-      padding 50px 0
+      padding 60px 0
   .row
     center-flex(row)
     padding: 5px
@@ -338,7 +338,7 @@ body
       
 .section
   width 100%
-  padding-bottom 50px
+  padding-bottom 300px
   center-flex(column)
   .section-content
     width 50%
@@ -348,10 +348,14 @@ body
       width 100%
       padding 0 15px
     p
-      font-size 20px
-      line-height 32px
+      margin 14px 0
+      font-size 22px
+      line-height 150%
       color grey2
 
+.about
+  p
+    font-weight 200
 
 .introduction
   center-flex(column)
@@ -366,7 +370,6 @@ body
       margin 20px 0
       border-radius 2px
       .card-heading
-        font-family 'Google Sans'
         font-size 40px
         line-height 1.2em
         @media (max-width 768px)
@@ -385,7 +388,10 @@ mark
   text-decoration underline
   span
     font-weight 700
-  
+
+.heading 
+  font-family GOOGLESANS
+
 .card-light
   background-color primary-grey
   color secondary-black
