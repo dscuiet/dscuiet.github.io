@@ -1,6 +1,9 @@
 @import _variables
 @import _functions
-@import 'GoogleSans.css'
+@import 'fonts.css'
+
+GOOGLESANS = 'Google Sans'
+INTER = 'Inter UI'
 
 *
   padding: 0
@@ -19,7 +22,7 @@ html
 body 
   width: 100%
   height: 100%
-  font: normal 14px/24px 'Google Sans','Helvetica','Helvetica Neue','Arial', sans-serif 
+  font: normal 14px/24px GOOGLESANS,'Helvetica','Helvetica Neue','Arial', sans-serif 
   overflow-x: hidden
   overflow-y scroll
   
@@ -137,49 +140,20 @@ body
 
 .link 
   z-index: 1
-  margin-top: 40px
+  margin-top: 20px
   display: block
   position: relative
-  border: 1px solid lighten(primary-black,55%)
+  border: 1px solid primary-black
   min-width 100px
   width: 250px;
   text-align: center
   padding: 20px 40px
   overflow: hidden
-  transition(all .6s cubic-bezier(cubic-value))  
-  @media (max-width: 768px)
-    padding: 5px 15px
-    width: 150px
-    background-color: #ffffff
-    color: primary-black
+  font-size 16px
+  transition(all .25s cubic-bezier(cubic-value))  
   &:hover 
-    color: primary-black
-
-.link:before
-  content: ''
-  position: absolute
-  z-index: -1
-  width: 100%
-  height: 100%
-  top: 0
-  left: 0
-  bottom: 0
-  right: 0
-  background-color: #fff
-  transform: translateX(-100%)
-  transition(all .5s cubic-bezier(cubic-value))
-  @media (max-width: 768px)
-    display: none;
-
-.link:hover:before
-  transform: translateX(0%)
-
-.btn
-  font-size: 12px
-  letter-spacing: 4px
-  text-transform: uppercase
-  @media (max-width: 768px)
-    letter-spacing: 1px
+    background-color primary-black
+    color primary-grey
 
 .masthead
   width 100%
@@ -338,23 +312,14 @@ body
   font-size: .6rem
   margin-left: 1rem
 
-.about
+.section-title
   center-flex(column)
-  background-color primary-black
-  .about-wall
-    center-flex(column)
+  .section-title--text
     padding 100px 0
-    .about-title
-      color primary-grey
-      font-size 4.4em
-      font-weight 300
-      @media (max-width 768px)
-        font-size 2em
-    img
-      max-width 100%
-    @media (max-width: 768px)
-      font-size: 24px
-      margin-bottom: 20px
+    font-size 4.4em
+    @media (max-width 768px)
+      font-size 2em
+      padding 50px 0
   .row
     center-flex(row)
     padding: 5px
@@ -370,7 +335,24 @@ body
       background-repeat: no-repeat
       @media (max-width: 768px)
         width: 100%
-        
+      
+.section
+  width 100%
+  padding-bottom 50px
+  center-flex(column)
+  .section-content
+    width 50%
+    @media (max-width 960px)
+      width 85%
+    @media (max-width 768px)
+      width 100%
+      padding 0 15px
+    p
+      font-size 20px
+      line-height 32px
+      color grey2
+
+
 .introduction
   center-flex(column)
   .card-container
@@ -427,6 +409,11 @@ mark
 .c-red
   color #db4437
 
+.text-light
+  color primary-grey
+
 .bg-black
   background-color primary-black
+
+.padding-small--horizontal
   padding 0 8px
